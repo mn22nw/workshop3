@@ -1,7 +1,0 @@
-C:\Users\Annie\Desktop\BlackJack\bin\Debug\ConsoleApplication.exe
-C:\Users\Annie\Desktop\BlackJack\bin\Debug\ConsoleApplication.pdb
-C:\Users\Annie\Desktop\BlackJack\obj\x86\Debug\Blackjack.csprojResolveAssemblyReference.cache
-C:\Users\Annie\Desktop\BlackJack\obj\x86\Debug\ConsoleApplication.exe
-C:\Users\Annie\Desktop\BlackJack\obj\x86\Debug\ConsoleApplication.pdb
-C:\Users\Mia\Desktop\H14\Analys & Design UML\Workshop 3_klar\obj\x86\Debug\ConsoleApplication.exe
-C:\Users\Mia\Desktop\H14\Analys & Design UML\Workshop 3_klar\obj\x86\Debug\ConsoleApplication.pdb

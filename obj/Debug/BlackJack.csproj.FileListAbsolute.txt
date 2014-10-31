@@ -1,5 +1,0 @@
-C:\Users\Mia\Desktop\H14\Analys & Design UML\workshop 3\BlackJack\bin\Debug\BlackJack.exe
-C:\Users\Mia\Desktop\H14\Analys & Design UML\workshop 3\BlackJack\bin\Debug\BlackJack.pdb
-C:\Users\Mia\Desktop\H14\Analys & Design UML\workshop 3\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
-C:\Users\Mia\Desktop\H14\Analys & Design UML\workshop 3\BlackJack\obj\Debug\BlackJack.exe
-C:\Users\Mia\Desktop\H14\Analys & Design UML\workshop 3\BlackJack\obj\Debug\BlackJack.pdb
