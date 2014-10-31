@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B12D10A5-97F2-4230-9050-2F9FDDB36447}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Blackjack</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controller\PlayGame.cs" />
+    <Compile Include="model\BaseCardDistribution.cs" />
+    <Compile Include="model\Card.cs" />
+    <Compile Include="model\Dealer.cs" />
+    <Compile Include="model\Deck.cs" />
+    <Compile Include="model\Game.cs" />
+    <Compile Include="model\IObservable.cs" />
+    <Compile Include="model\INewCardListener.cs" />
+    <Compile Include="model\Player.cs" />
+    <Compile Include="model\rules\AmericanNewGameStrategy.cs" />
+    <Compile Include="model\rules\BasicHitAndSoftHitStrategy.cs" />
+    <Compile Include="model\rules\BasicHitStrategy.cs" />
+    <Compile Include="model\rules\EqualDealerWinStrategy.cs" />
+    <Compile Include="model\rules\EqualPlayerWinStrategy.cs" />
+    <Compile Include="model\rules\IHitStrategy.cs" />
+    <Compile Include="model\rules\INewGameStrategy.cs" />
+    <Compile Include="model\rules\InternationalNewGameStrategy.cs" />
+    <Compile Include="model\rules\IWinEqualStrategy.cs" />
+    <Compile Include="model\rules\RulesFactory.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\ActionView.cs" />
+    <Compile Include="view\IView.cs" />
+    <Compile Include="view\SimpleView.cs" />
+    <Compile Include="view\SwedishView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UpgradeLog.htm" />
+    <Content Include="UpgradeLog.XML" />
+    <Content Include="_UpgradeReport_Files\UpgradeReport.css" />
+    <Content Include="_UpgradeReport_Files\UpgradeReport.xslt" />
+    <Content Include="_UpgradeReport_Files\UpgradeReport_Error.png" />
+    <Content Include="_UpgradeReport_Files\UpgradeReport_Information.png" />
+    <Content Include="_UpgradeReport_Files\UpgradeReport_Success.png" />
+    <Content Include="_UpgradeReport_Files\UpgradeReport_Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BlackJackModel\BlackJack.classdiagram" />
+    <None Include="BlackJackModel\BlackJackModel.modelproj" />
+    <None Include="BlackJackModel\Game_Stand.sequencediagram" />
+    <None Include="BlackJackModel\ModelDefinition\BlackJackModel.uml" />
+    <None Include="BlackJackModel\ModelDefinition\Package1_0950.uml" />
+    <None Include="BlackJackModel\ModelDefinition\Package2_0950.uml" />
+    <None Include="BlackJackModel\ModelDefinition\Package_0949.uml" />
+    <None Include="BlackJackModel\ModelDefinition\Package_0950.uml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BlackJackModel\BlackJack.classdiagram.layout" />
+    <EmbeddedResource Include="BlackJackModel\Game_Stand.sequencediagram.layout">
+      <DependentUpon>Game_Stand.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
